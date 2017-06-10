@@ -17,9 +17,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-   
-	
      
+	
     <style>
 body{
 	font-family: 'Open Sans', sans-serif;
@@ -38,15 +37,22 @@ body{
 .navbar {
 	margin-bottom:0;
 	}
+.navbar-form{
+	box-shadow:none;
+	-webkit-box-shadow: none;
+}
 .navbar-collapse{
 	box-shadow:none;
-	-webkit-box-shadow:none;
+	-webkit-box-shadow: none;
 }
 .navbar-default .navbar-toggle{
-	border-color:transparent;
-	}
+	border:none;
+}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-	background-color:rgba(255,255,255,0.19);	
+	background-color:rgba(255,255,255,0.15);
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color:rgba(255,255,255,0.6);
 }
 .navbar-default{
 	background-color:rgba(0,0,0,0.4);
@@ -69,26 +75,15 @@ body{
 	padding-top:14px;
 	padding-bottom:14px;
 	}
-.navbar-default .navbar-nav>li>a:focus{
-	color:rgba(255,255,255,1.00);
-}
 .navbar-default .navbar-nav>li>a:hover{
 	color:rgba(255,255,255,1.00);
 	
 }
-
 .navbar-default .navbar-nav>li>a:active{
 	color:rgba(255,255,255,1.00);
 }
 .navbar-default .navbar-nav>li>a:visited{
 	color:rgba(255,255,255,1.00);
-}
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
-	color:rgba(255,255,255,1.00);
-	background-color:transparent;
-}
-.navbar-default .navbar-nav .open .dropdown-menu>li>a{
-	color:rgba(255,255,255,0.6);
 }
 .navbar-form .input-group>.form-control {
 	width:130px;
@@ -99,7 +94,7 @@ body{
 	border-radius:50px;
 	background-color:rgba(255,255,255,0.15);
 	box-shadow:none;
-	-webkit-box-shadow:none;
+	-webkit-box-shadow: none;
 	font-size:15px;
 	color:rgba(255,255,255,1.00);
 	
@@ -125,8 +120,6 @@ body{
 }
 .navbar-form{
 	padding-top:3.9px;
-	box-shadow:none;
-	-webkit-box-shadow:none;
 }
 .input-group .form-control::-webkit-input-placeholder { color:rgba(255,255,255,0.6); }
 .input-group .form-control:-moz-placeholder { color:rgba(255,255,255,0.6); }
@@ -136,18 +129,22 @@ body{
 	text-align:center;
 }
 
-.navbar-right .dropdown-menu{
-	right:auto;
-}
-
-.dropdown-menu>li>a{
-	color:rgba(255,255,255,0.6);
-	font-size:15px;
-}
-.dropdown-menu>li>a:hover{
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
 	color:rgba(255,255,255,1.00);
 	background-color:transparent;
 }
+.navbar-right .dropdown-menu{
+	right:auto;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+	color:rgba(255,255,255,0.6);
+	font-size:15px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+	color:rgba(255,255,255,1.00);
+	background-color:transparent;
+}
+
 .dropdown-menu{
 	background-color:rgba(0,0,0,0.4);
 	box-shadow:none;
@@ -221,8 +218,7 @@ blockquote{
 	padding-top:50px;
 	padding-bottom:50px;
 	background-color:rgba(0,0,0,1.00);
-	color:rgba(255,255,255,1.00);
-
+	color:rgba(255,255,255,1.00);	
 }
 ul{
 	list-style-type: none;
@@ -245,15 +241,6 @@ a:hover{
 }
 .foot .col-md-3{
 	padding-left:15px;
-}
-
-.footer1 {
-  clear: both;
-  background:rgba(0,0,0,1.00);
-  color:white;
-  font-size:12px;
-  text-align:left;
-  
 }
 <!----modal css--->
 * {
@@ -394,8 +381,6 @@ a:hover{
   border-radius: 5px;
 }
 <!-----end modal css--->
-
-
 
 	</style>
   </head>
@@ -761,34 +746,21 @@ a:hover{
     <a href="https://www.youtube.com/user/GradoHeadphones" target="_blank"><img src="img/youtube1.png" alt="youtube" height="20"></a>
     </span>
     </div>
-    
-    
 </div>
-	
 </div>  
 </div>  
 
 
- <div class="footer1">
- <div class="container">
-      <p>© 2017 Grado Labs. All rights reserved.</p>
-    </div>
-    </div>
+
+
 
 
   
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
      <script type="text/javascript" src="js/modal.js"></script>
-  <!---- hoverable dropdown menu--->
-    <script>$('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-})</script>
-    
   </body>
 </html>
